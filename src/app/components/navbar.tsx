@@ -4,7 +4,8 @@ import React from 'react';
 const Navbar = () => {
   return (
 
-    <nav className="w-full flex justify-between items-center pl-100 pr-100 pt-10 sticky top-0">
+  <div className=" flex justify-center items-center">  
+    <nav className="p-10 gap-40 flex justify-evenly items-center pt-10 sticky top-0">
             
             {/* Logo */}
             <div className="flex align-center gap-2">
@@ -33,8 +34,8 @@ const Navbar = () => {
                 </button>
             </div>
     </nav>
-
-  );
-};
+    </div>
+  );    
+};  
 
 export default Navbar;

@@ -21,9 +21,18 @@ export default function Home() {
     <div className='flex min-h-screen w-full items-center justify-center'>  
       <main>
         <section>
-        <h1 className="text-4xl font-bold">
+        <h1 className="text-2xl text-center font-bold">
           Coming Soon
         </h1>
+        <h1 className='text-5xl font-bold'>
+        Real-Time Amazon Data. No Bloat.
+        </h1>
+        <div className="flex flex-row-reverse justify-center  items-center gap-4">
+        <button className="bg-blue-500 text-white rounded-md px-4 py-2 mt-4 ml-2">
+            Sign up for our waitlist.
+          </button>
+          <input type="text" placeholder="Enter your email" className="border border-gray-300 rounded-md p-2 mt-4 flex flex-auto items-center" />
+        </div> 
           </section>
       </main>
     </div>
