@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Navbar from "./components/navbar";
 import Head from "next/head";
 import { FormInput } from "lucide-react";
+import Footer from "./components/footer";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,7 +22,11 @@ export default function Home() {
     <Navbar />
 
     <div>
-      <main className="flex min-h-screen p-24 pr-80 pl-80 justify-center">
+      <main className="flex min-h-screen p-24 pr-40 pl-40 justify-center">
+        
+
+        
+        {/* Hero Section */}
         <section className='flex flex-col flex-grow w-full mt-50 justify-center items-center'>
         <div>
         <h1 className="text-lg text-center">
@@ -37,12 +42,16 @@ export default function Home() {
           <input type="text" placeholder="Enter your email" className="flex flex-grow border border-gray-300 rounded-md p-2 " />      
         </div>
         </div>
-        <div className=" flex flex-grow w-full mt-20 border border-white rounded-md pt-80 pb-80 ">
-
+        <div className=" flex w-6xl mt-20 border border-white rounded-md pt-80 pb-80 ">
         </div> 
-          </section>
+        </section>
+
       </main>
     </div>
+
+    <Footer />
+
     </>
   );
 }
+
